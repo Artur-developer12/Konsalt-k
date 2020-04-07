@@ -1,0 +1,65 @@
+.info{
+
+		&_breadCramp{
+			display: flex;
+			margin-top: 30px;
+			margin-bottom: 70px;
+				&_page{
+					font-size: 15px;
+					font-family: 'Montserrat', sans-serif;
+					font-weight: 700;
+					color: #949494;
+					margin-right: 5px;
+					text-decoration: none;
+						@media @mobale-sm {
+							font-size: 13px;
+						}
+						@media @mobale-ultra-sm {
+							font-size: 11px;
+						}
+				}
+				&--active{
+					color: #6C63FF;
+				}
+		}
+		&--title{
+			color: @title-black;
+		}
+		&_item{
+			margin-bottom: 120px;
+				&_text{
+	  			font-family: 'Montserrat', sans-serif;
+				color: #76777A;
+				font-size: 14px;
+				font-weight: 400;
+				max-width: 640px;
+				margin: 0 auto;
+				margin-bottom: 55px;
+					@media @mobale-sm {
+							font-size: 13px;
+						}
+					&>p{
+						margin-bottom: 20px;
+					}
+				}
+				&_line{
+					display: block;
+					width: 640px;
+					height: 1px;
+					background-color: #9999;
+					margin: 0 auto;
+					margin-bottom: 25px;
+				}
+				&_fact{
+					font-size: 12px;
+					color: #000;
+	  				font-family: 'Montserrat', sans-serif;
+	  				text-align: center;
+					font-weight: 400;
+
+
+
+				}
+		}
+		
+}

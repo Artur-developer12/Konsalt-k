@@ -1,0 +1,123 @@
+.header{
+	height: 100vh;
+	background-image: url("../img/header-fon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center center;
+
+		&_inner{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 0;
+
+		}
+		&_logo{
+			display: flex;
+			align-items: center;
+				&_img{
+					background-color:#cecece;
+					border-radius: 50%;
+					width: 30px;
+					height: 30px;
+				}
+				&_text{
+					font-family: 'Oswald', sans-serif;
+					font-size: 18px;
+					text-transform: uppercase;
+					font-weight: 400;
+					margin-left: 5px;
+					color: #fff;
+					text-decoration: none;
+						@media @mobale-ultra-sm {
+							font-size: 15px;
+						}
+				}
+		}
+		&_nav{
+			
+				@media @tablet {
+					display: none;
+					z-index: 10;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					position: fixed;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0,0,0,0.9);
+				}
+		}
+		&_link{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 14px;
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 800;
+			margin-right: 52px;
+			transition: 0.3s;
+				@media @tablet{
+					margin-right: 0;
+					margin-bottom: 30px;
+					font-size: 25px;
+
+				}
+				&:hover{
+					color: @violet;
+				}
+		}
+		&_btn{
+
+				@media @tablet {
+					display: none;
+				}
+		}
+}
+.burger{
+	display: none;
+	width: 45px;
+	border: 0;
+	cursor: pointer;
+	z-index: 12;
+		@media @tablet {
+			display: block;
+		}
+		&:active{
+			outline: none;
+
+		}
+		&_line{
+			width: 100%;
+			background-color: #fff;
+			height: 3px;
+			margin-bottom: 5px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			 
+		}
+
+}
+
+.fixed{
+	position: fixed;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: #435480;
+	animation: nav_fixed 0.5s;
+	box-shadow: 0px 0px 15px -2px;
+ 
+}
+
+@keyframes nav_fixed{
+	from{
+		top: -99px;
+	}
+	to{
+		top: 0;
+	}
+}

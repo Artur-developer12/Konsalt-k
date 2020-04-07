@@ -1,0 +1,88 @@
+.about{
+		&_begin{
+			background-image: url("../img/about-fon.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			height: 620px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 100px;
+			position: relative;
+			margin-bottom: 280px;
+					@media @mobale-ultra-sm{
+						height: 530px;
+
+					}
+				&_image{
+					max-width: 700px;
+					position: absolute;
+					bottom: -180px;
+						@media @mobale {
+							max-width: 600px;
+							bottom: -125px;
+
+						}
+						@media @mobale-sm {
+							max-width: 500px;
+							bottom: -80px;
+
+						}
+						@media @mobale-ultra-sm{
+							max-width: 500px;
+							bottom: -80px;
+
+						}
+				}
+	}
+
+
+
+	&_block{
+		display: flex; 
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 100px;
+			@media (max-width: 829px) {
+				justify-content: center;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&--reverse{
+				flex-direction: row-reverse;
+			}
+
+			&_info{
+				width: 50%;
+					@media @mobale-sm {
+						width: 70%;
+					}
+					@media @mobale-ultra-sm {
+						width: 100%;
+					}
+			}
+			&_img{
+				max-width: 400px;
+					@media @mobale-sm {
+						max-width: 345px;
+					}
+			}
+	}
+
+	&--title{
+		color: #384158;
+		text-align: left;
+		
+	}
+	&--subtitle{
+		color: #76777A;
+		text-align: left;
+			@media (max-width: 829px) {
+				margin-bottom: 25px;
+			}
+	}
+	 
+		 
+}

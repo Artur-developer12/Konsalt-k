@@ -1,0 +1,134 @@
+.contact{
+	background-image: url("../img/contact-fon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 100px 0;
+		&--subtitle{
+			width: 100%;
+			max-width: 270px;
+			margin: 0 auto;
+			margin-bottom: 120px;
+		}
+		&_inner{
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+				@media (max-width: 850px) {
+					flex-direction: column;
+					align-items: center;
+				}
+		}
+		&_info{
+				@media (max-width: 850px) {
+					width: 100%;
+					max-width: 70%;
+					margin-bottom: 50px;
+				}
+
+				&--title{
+					text-align: left;
+					margin-bottom: 40px;
+						@media @mobale-sm {
+							margin-bottom: 20px;
+						}
+
+				}
+				&_list{
+					display: flex;
+					align-items: center;
+					width: 100%;
+					max-width: 220px;
+					margin-bottom: 40px;
+						@media (max-width: 850px) {
+							margin-bottom: 20px;
+						}
+						&:last-child{
+							margin-bottom: 0;
+						}
+						&_icon{
+							width: 24px;
+							margin-right: 18px;
+						}
+						&_text{
+  							font-family: 'Montserrat', sans-serif;
+  							font-weight: 500;
+  							font-size: 14px;
+  							color: #fff;
+						}
+				}
+		}
+		&_form{
+			width: 100%;
+			max-width: 520px;
+			display: flex;
+			flex-direction: column;
+				@media @mobale-sm {
+					padding: 0 20px;
+				}
+				&>input{
+					width: 100%;
+					border-radius: 5px;
+					margin-bottom: 30px;
+					height: 40px;
+					border: 0;
+  					padding-left: 25px;
+  					font-family: 'Montserrat', sans-serif;
+  					font-weight: 400;
+  					color: #9B9B9B;
+  					font-size: 14px;
+  					transition: box-shadow 0.2s;
+  						@media @mobale-sm {
+							margin-bottom: 15px;
+						}
+  						&:focus{
+							box-shadow: 0 0 15px -5px #fff;
+							
+  						}
+						&::placeholder{
+  							font-family: 'Montserrat', sans-serif;
+  							font-weight: 400;
+  							color: #9B9B9B;
+  							font-size: 14px;
+  							opacity: 1;
+
+
+						}
+						&:focus::placeholder{
+							opacity: 0;
+						}
+				}
+				&>textarea{
+					width: 100%;
+					height: 160px;
+					margin-bottom: 30px;
+					border-radius: 5px;
+  					padding-left: 25px;
+  					padding-top: 20px;
+  					resize: none;
+  					font-family: 'Montserrat', sans-serif;
+  					font-weight: 400;
+  					color: #9B9B9B;
+  					font-size: 14px;
+  					border: 0;
+  					transition: box-shadow 0.2s;
+						&:focus{
+							box-shadow: 0 0 15px -5px #fff;
+							
+  						}
+						&::placeholder{
+  							font-family: 'Montserrat', sans-serif;
+  							font-weight: 400;
+  							color: #9B9B9B;
+  							font-size: 14px;
+  							opacity: 1;
+
+
+						}
+						&:focus::placeholder{
+							opacity: 0;
+						}
+
+				}
+		}
+}

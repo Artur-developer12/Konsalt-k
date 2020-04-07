@@ -1,0 +1,163 @@
+@mobale-ultra-sm: ~"(max-width: 367px)";
+@mobale-sm: ~"(max-width: 565px)";
+@mobale: ~"(max-width: 768px)";
+@tablet: ~"(max-width: 991px)";
+@notebook: ~"(max-width: 1199px)";
+
+
+@violet: #C957FF;
+@violet-hover:#BC31FF;;
+@violet-shadow: #8C00A3;
+
+@title-black: #384158;
+
+
+ body{
+ 	margin: 0;
+ }
+   *,
+ *:before,
+ *:after{
+ 	box-sizing: border-box;
+ }
+ h1,h2,h3,h4,h5,h6{
+ 	margin: 0;
+ }
+ p{
+ 	margin:0;
+ }
+ button{
+ 	background: none;
+  outline: none !important;
+
+ }
+ ul{
+ 	margin: 0;
+ 	padding: 0;
+ }
+a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+}
+button, button:visited, button:focus, button:active, button:hover{
+    outline:0 none !important;
+}
+
+ .container{
+ 	width: 100%;
+ 	max-width: 1140px;
+ 	margin: 0 auto;
+ 	padding: 0 15px;
+ }
+ img{
+ 	width: 100%;
+ 	height: auto;
+ }
+  /*******btn********/
+  .btn{
+  	border: 0;
+  	width: 162px;
+  	padding: 10px 0;
+  	background-color: @violet;
+  	border-radius: 5px;
+  	font-size: 10px;
+  	font-family: 'Montserrat', sans-serif;
+  	color: #fff;
+  	text-transform: uppercase;
+  	font-weight: 700;
+  	box-shadow: 0 5px 15px -4px  @violet-shadow;
+  	cursor:pointer;
+	  transition: 0.3s;
+
+  		&:hover{
+  			background-color: @violet-hover;
+			
+  		}
+  }
+
+.title{
+	font-size: 24px;
+  	font-family: 'Oswald', sans-serif;
+  	font-weight: 500;
+  	text-transform: uppercase;
+  	color: #fff;
+  	margin-bottom: 15px;
+  	text-align: center;
+      @media @mobale-sm {
+        font-size: 22px;
+      }
+      @media @mobale-ultra-sm{
+        font-size: 18px;
+      }
+
+}
+.subtitle{
+	font-size: 12px;
+  	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #DEDEDE;
+	max-width: 500px;
+	text-align: center;
+     @media @mobale-sm {
+        max-width: 340px;
+      }
+      @media @mobale-ultra-sm{
+        font-size: 10px;
+        max-width: 270px;
+      }
+
+}
+.active{
+  display: flex !important;
+}
+.hidden{
+  overflow: hidden;
+}
+
+/*********************************************/
+/*********************************************/
+/***************index.html********************/
+/*********************************************/
+/*********************************************/
+
+
+ 
+ /******************header********************/
+ @import 'index/header.less';
+  /******************intro********************/
+ @import 'index/intro.less';
+   /******************about********************/
+ @import 'index/about.less';
+    /******************advantares********************/
+ @import 'index/advantares.less';
+    /******************services********************/
+ @import 'index/services.less';
+     /******************complex********************/
+ @import 'index/complex.less';
+      /******************handling********************/
+ @import 'index/handling.less';
+       /******************contact********************/
+ @import 'index/contact.less';
+        /******************footer********************/
+ @import 'index/footer.less';
+
+
+/**************************************************/
+/*********************Modal************************/
+  @import 'modal.less';
+
+
+
+/*********************************************/
+/***************about_service.html************/
+/*********************************************/
+ 
+
+
+
+         /******************header********************/
+ @import 'about_service/header.less';
+         /******************info********************/
+ @import 'about_service/info.less';
+          /******************sale********************/
+ @import 'about_service/sale.less';
+

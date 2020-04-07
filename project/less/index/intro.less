@@ -1,0 +1,85 @@
+.intro{	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: calc(100vh - 48px) ;
+		
+
+		&_title{
+			font-size: 29px;
+			font-family: 'Oswald', sans-serif;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-bottom: 8px;
+			position: relative;
+				@media @mobale {
+					font-size: 25px;
+				}
+				@media @mobale-sm {
+					font-size: 22px;
+				}
+				@media @mobale-ultra-sm{
+					font-size: 14px;
+				}
+				&:before{
+					position: absolute;
+					top: -5px;
+					left: -35px;
+					display: block;
+					content: '';
+					width: 52px;
+					height: 52px;
+					border-radius: 50%;
+					background: rgba(79, 105, 184, 0.14);
+					animation: cirkle_title 1s infinite;
+				}
+
+		}
+		&_text{
+			font-size: 11px;
+			font-family: 'Montserrat', sans-serif;
+			color: #DEDEDE;
+			font-weight: 500;
+			width: 100%;
+			max-width: 460px;
+			margin-bottom: 40px;
+				@media @mobale-ultra-sm{
+					font-size: 8px;
+					margin-bottom: 20px;
+
+				}
+
+		}
+		&_img{
+
+				&_icon{
+ 
+				}
+				&_fon{
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 50%;
+					height: auto;
+ 
+
+				}
+		}
+		&--btn{
+			@media @mobale-ultra-sm{
+				font-size: 8px;
+				width: 120px;
+			}
+		}
+}
+
+
+@keyframes cirkle_title{
+	from{
+		transform: rotateY(0);
+	}
+	to{
+		transform: rotateY(180deg);
+	}
+}
