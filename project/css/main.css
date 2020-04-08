@@ -416,7 +416,7 @@ img {
 
 .advantares {
   margin-top: 135px;
-  background-color: #F6F6F6;
+  background-color: #fff;
   padding: 80px 0;
 }
 
@@ -699,7 +699,7 @@ img {
 
 .handling {
   padding: 100px 0;
-  background-color: #F4F4F4;
+  background-color: #fff;
 }
 
 .handling--title {
@@ -1215,6 +1215,8 @@ img {
   animation-name: modalUp;
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .modalDoun {
@@ -1222,6 +1224,8 @@ img {
   animation-name: modalDoun;
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes modalUp {
@@ -1277,6 +1281,53 @@ img {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
+  }
+}
+
+/**************************************************/
+
+/*********************Modal************************/
+
+.fadeInLeft,
+.fadeInRight {
+  -webkit-animation-duration: 2s !important;
+  animation-duration: 2s !important;
+}
+
+.header_animate {
+  -webkit-animation-name: header_img;
+  animation-name: header_img;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s !important;
+  animation-duration: 1.5s !important;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes header_img {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  from {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@keyframes header_img {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  from {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
 }
 

@@ -38,10 +38,10 @@ var gulp = require('gulp'),
   
  	gulp.task('browser-sync', function(){
  		brouserSinc({
- 			proxy:"konsalt-k/project",
- 			// server: {
- 			// 	baseDir:'project'
- 			// }
+ 			// proxy:"konsalt-k/project",
+ 			server: {
+ 				baseDir:'project'
+ 			}
  		})
  	});
 

@@ -1,0 +1,20 @@
+.fadeInLeft, .fadeInRight{
+	animation-duration: 2s !important;
+}
+.header_animate{
+	animation-name:header_img; 
+	animation-timing-function: linear;
+	animation-duration: 1.5s !important;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes header_img{
+	from{
+		transform: translateY(0);
+	}
+	from{
+		transform: translateY(20px);
+	}
+}
