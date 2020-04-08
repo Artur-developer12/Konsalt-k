@@ -196,29 +196,6 @@ img {
   color: #C957FF;
 }
 
-.burger {
-  display: none;
-  width: 45px;
-  border: 0;
-  cursor: pointer;
-  z-index: 12;
-}
-
-.burger:active {
-  outline: none;
-}
-
-.burger_line {
-  width: 100%;
-  background-color: #fff;
-  height: 3px;
-  margin-bottom: 5px;
-}
-
-.burger_line:last-child {
-  margin-bottom: 0;
-}
-
 .fixed {
   position: fixed;
   left: 0;
@@ -1027,6 +1004,156 @@ img {
   text-align: center;
 }
 
+/*********************************************/
+
+/***************about_service.html************/
+
+/*********************************************/
+
+/******************header********************/
+
+.header--about {
+  background-image: url('../img/about_service--fon.jpg');
+}
+
+.header_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: calc(100vh - 48px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.header_block_line {
+  display: block;
+  width: 52px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.header_block_subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/******************info********************/
+
+.info_breadCramp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.info_breadCramp_page {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #949494;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.info_breadCramp--active {
+  color: #6C63FF;
+}
+
+.info--title {
+  color: #384158;
+}
+
+.info_item {
+  margin-bottom: 120px;
+}
+
+.info_item_text {
+  font-family: 'Montserrat', sans-serif;
+  color: #76777A;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.info_item_text > p {
+  margin-bottom: 20px;
+}
+
+.info_item_line {
+  display: block;
+  width: 640px;
+  height: 1px;
+  background-color: #9999;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.info_item_fact {
+  font-size: 12px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+/******************sale********************/
+
+.sale {
+  background: -webkit-gradient(linear, left top, right top, from(#6271A6), to(rgba(101, 47, 255, 0.62)));
+  background: -o-linear-gradient(left, #6271A6 0%, rgba(101, 47, 255, 0.62) 100%);
+  background: linear-gradient(90deg, #6271A6 0%, rgba(101, 47, 255, 0.62) 100%);
+}
+
+.sale_inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 45px 0;
+}
+
+.sale_text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
 /**************************************************/
 
 /*********************Modal************************/
@@ -1284,201 +1411,97 @@ img {
   }
 }
 
-/**************************************************/
-
-/*********************Modal************************/
-
-.fadeInLeft,
-.fadeInRight {
-  -webkit-animation-duration: 2s !important;
-  animation-duration: 2s !important;
+.burger_animate {
+  -webkit-animation-name: burger;
+  animation-name: burger;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
-.header_animate {
-  -webkit-animation-name: header_img;
-  animation-name: header_img;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-duration: 1.5s !important;
-  animation-duration: 1.5s !important;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes header_img {
+@-webkit-keyframes burger {
   from {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    right: -999px;
   }
 
-  from {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+  to {
+    right: 0;
   }
 }
 
-@keyframes header_img {
+@keyframes burger {
   from {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    right: -999px;
   }
 
-  from {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+  to {
+    right: 0;
   }
 }
 
-/*********************************************/
-
-/***************about_service.html************/
-
-/*********************************************/
-
-/******************header********************/
-
-.header--about {
-  background-image: url('../img/about_service--fon.jpg');
+.burger {
+  display: none;
+  width: 30px;
+  height: 25px;
+  border: 0;
+  cursor: pointer;
+  z-index: 12;
+  position: relative;
 }
 
-.header_block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: calc(100vh - 48px);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.burger:active {
+  outline: none;
 }
 
-.header_block_line {
-  display: block;
-  width: 52px;
-  height: 2px;
+.burger_line {
+  width: 100%;
   background-color: #fff;
-  margin: 0 auto;
-  margin-bottom: 15px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  border-radius: 5px;
 }
 
-.header_block_subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: #fff;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 40px;
+.burger_line:last-child {
+  margin-bottom: 0;
 }
 
-/******************info********************/
-
-.info_breadCramp {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 70px;
+.burger_line:nth-child(1) {
+  top: 0;
 }
 
-.info_breadCramp_page {
-  font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #949494;
-  margin-right: 5px;
-  text-decoration: none;
+.burger_line:nth-child(2),
+.burger_line:nth-child(3) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.info_breadCramp--active {
-  color: #6C63FF;
+.burger_line:nth-child(4) {
+  bottom: 0;
 }
 
-.info--title {
-  color: #384158;
+.click .burger_line:nth-child(1),
+.click .burger_line:nth-child(4) {
+  opacity: 0;
 }
 
-.info_item {
-  margin-bottom: 120px;
+.click .burger_line:nth-child(2) {
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
 
-.info_item_text {
-  font-family: 'Montserrat', sans-serif;
-  color: #76777A;
-  font-size: 14px;
-  font-weight: 400;
-  max-width: 640px;
-  margin: 0 auto;
-  margin-bottom: 55px;
-}
-
-.info_item_text > p {
-  margin-bottom: 20px;
-}
-
-.info_item_line {
-  display: block;
-  width: 640px;
-  height: 1px;
-  background-color: #9999;
-  margin: 0 auto;
-  margin-bottom: 25px;
-}
-
-.info_item_fact {
-  font-size: 12px;
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-weight: 400;
-}
-
-/******************sale********************/
-
-.sale {
-  background: -webkit-gradient(linear, left top, right top, from(#6271A6), to(rgba(101, 47, 255, 0.62)));
-  background: -o-linear-gradient(left, #6271A6 0%, rgba(101, 47, 255, 0.62) 100%);
-  background: linear-gradient(90deg, #6271A6 0%, rgba(101, 47, 255, 0.62) 100%);
-}
-
-.sale_inner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 45px 0;
-}
-
-.sale_text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 25px;
+.click .burger_line:nth-child(3) {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 @media (max-width: 991px) {
@@ -1499,8 +1522,8 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     position: fixed;
-    left: 0;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -1647,20 +1670,20 @@ img {
     margin-bottom: 15px;
   }
 
-  .modal_inner {
-    margin: 0 50px;
-  }
-
-  .modal_form {
-    margin: 0 20px;
-  }
-
   .info_breadCramp_page {
     font-size: 13px;
   }
 
   .info_item_text {
     font-size: 13px;
+  }
+
+  .modal_inner {
+    margin: 0 50px;
+  }
+
+  .modal_form {
+    margin: 0 20px;
   }
 }
 
@@ -1721,6 +1744,14 @@ img {
     margin-bottom: 50px;
   }
 
+  .info_breadCramp_page {
+    font-size: 11px;
+  }
+
+  .sale_text {
+    font-size: 12px;
+  }
+
   .modal_inner {
     height: 400px;
   }
@@ -1742,13 +1773,5 @@ img {
   .modal_form_textarea {
     margin-bottom: 20px;
     height: 85px;
-  }
-
-  .info_breadCramp_page {
-    font-size: 11px;
-  }
-
-  .sale_text {
-    font-size: 12px;
   }
 }

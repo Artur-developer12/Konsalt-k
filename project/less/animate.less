@@ -1,20 +1,15 @@
-.fadeInLeft, .fadeInRight{
-	animation-duration: 2s !important;
-}
-.header_animate{
-	animation-name:header_img; 
-	animation-timing-function: linear;
-	animation-duration: 1.5s !important;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
 
+.burger_animate{
+	animation-name: burger;
+	animation-duration: 600ms;
+	animation-timing-function: ease;
 }
 
-@keyframes header_img{
+@keyframes burger{
 	from{
-		transform: translateY(0);
+		right: -999px;
 	}
-	from{
-		transform: translateY(20px);
+	to{
+		right: 0;
 	}
 }

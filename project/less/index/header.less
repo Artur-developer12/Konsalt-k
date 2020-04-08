@@ -43,8 +43,8 @@
 					align-items: center;
 					justify-content: center;
 					position: fixed;
-					left: 0;
 					top: 0;
+					right: 0;
 					width: 100%;
 					height: 100%;
 					background-color: rgba(0,0,0,0.9);
@@ -76,31 +76,7 @@
 				}
 		}
 }
-.burger{
-	display: none;
-	width: 45px;
-	border: 0;
-	cursor: pointer;
-	z-index: 12;
-		@media @tablet {
-			display: block;
-		}
-		&:active{
-			outline: none;
-
-		}
-		&_line{
-			width: 100%;
-			background-color: #fff;
-			height: 3px;
-			margin-bottom: 5px;
-				&:last-child{
-					margin-bottom: 0;
-				}
-			 
-		}
-
-}
+ 
 
 .fixed{
 	position: fixed;

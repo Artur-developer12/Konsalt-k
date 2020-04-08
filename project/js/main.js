@@ -10,12 +10,29 @@ let burger = document.querySelector('#burger');
 let header_nav = document.querySelector('.header_nav')
 
 // бургер меню
+ if (burger != undefined) {
+ 	burger.onclick = function(){
+	 	header_nav.classList.toggle('active');
+	 	this.classList.toggle('click');
+	 	header_nav.classList.toggle('burger_animate');
+	 	if (body.style.overflow !== 'hidden') {
+	 		body.style.overflow ='hidden';
+	 	}
+	 	else{
+	 		body.style.overflow ='auto';
+	 	}
+	}
+ }
 for (let i = 0; i < links.length; i++) {
  	links[i].onclick = () => {
  		for (let i = 0; i < header_nav.classList.length; i++) {
  			if (header_nav.classList[i] == 'active') {
 
 		 		header_nav.classList.toggle('active');
+	 			header_nav.classList.toggle('burger_animate');
+	 			burger.classList.toggle('click');
+
+
 		 		if (body.style.overflow == 'hidden') {
 		 			body.style.overflow ='auto';
 				}
@@ -23,17 +40,6 @@ for (let i = 0; i < links.length; i++) {
  		} 
  	}
  } 
- if (burger != undefined) {
- 	burger.onclick = () =>{
- 	document.querySelector('.header_nav').classList.toggle('active');
- 	if (body.style.overflow !== 'hidden') {
- 		body.style.overflow ='hidden';
- 	}
- 	else{
- 		body.style.overflow ='auto';
- 	}
- }
- }
   
 // плавный скролл
 for (let link of links) {
