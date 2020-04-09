@@ -5,7 +5,6 @@
 	<title>Консалт-К</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body id="mane">
@@ -46,7 +45,7 @@
 					<button id="btn_modal" class="btn intro--btn">Оставить заявку</button>
 				</div>
 				<div class="intro_img">
-					<img class="intro_img_icon" src="img/header_icon.svg" alt="">
+					<img class="intro_img_item" src="img/header_icon.svg" alt="">
  				</div>		 	 
 			</div>
 		</div>
@@ -62,10 +61,10 @@
 			<h3 class="modal_subtitle">
 				Оставьте Ваши контакты и мы с вами свяжемся в ближайшее время.
 			</h3>
-			<form class="modal_form" method="POST" action="">
+			<form class="modal_form">
 				<input type="text" class="modal_form_input" name="name" placeholder="Имя">
 				<input type="text" class="modal_form_input" name="phone" placeholder="Телефон">
-				<textarea class="modal_form_textarea">Сообщение</textarea>
+				<textarea placeholder="Сообщение"class="modal_form_textarea"></textarea>
 				<button class="btn">Отправить</button>
 			</form>
 		</div>
@@ -254,75 +253,6 @@
 		</div> <!-- /services_inner -->
 	</section>
 
-	<section class="complex">
-		<h2 class="title">Комплесный подход</h2>
-		<h3 class="subtitle complex--subtitle">Мы поможем вам перераспределить нагрузку c вашей компаний на нас</h3>
-
-		<div class="complex_inner">
-			<div class="complex_item">
-				<h2 class="complex_item_title">Базовый</h2>
-				<h3 class="complex_item_price">
-					<i class="fas fa-ruble-sign"></i>
-					<span>10 999</span>
-					<i class="complex_item_price_month">/мес</i>
-				</h3>
-				<ul class="complex_item_list">
-					<li>Расчет и начисление зарплаты сотрудникам</li>
-					<li>Подготовка кадровых документов по сотрудникам</li>
-					<li>Подготовка зарплатных документов по сотрудникам</li>
-					<li>Подготовка отчетности по сотрудникам (ЕСВ, 1ДФ, другие)</li>
-					<li> Юридическая консультация</li>
-					<li> Подбор системы налогообложения</li>
-					<li> Оптимизация налогов</li>
-					<li> Разблокировка расчётного счёта</li>
-				</ul>
-
-				<button id="btn_modal" class="complex_item_btn">Заказать</button>
-			</div>
-			<div class="complex_item">
-				<h2 class="complex_item_title">Базовый</h2>
-				<h3 class="complex_item_price">
-					<i class="fas fa-ruble-sign"></i>
-					<span>10 999</span>
-					<i class="complex_item_price_month">/мес</i>
-				</h3>
-				<ul class="complex_item_list">
-					<li>Расчет и начисление зарплаты сотрудникам</li>
-					<li>Подготовка кадровых документов по сотрудникам</li>
-					<li>Подготовка зарплатных документов по сотрудникам</li>
-					<li>Подготовка отчетности по сотрудникам (ЕСВ, 1ДФ, другие)</li>
-					<li> Юридическая консультация</li>
-					<li> Подбор системы налогообложения</li>
-					<li> Оптимизация налогов</li>
-					<li> Разблокировка расчётного счёта</li>
-				</ul>
-
-				<button id="btn_modal" class="complex_item_btn">Заказать</button>
-			</div>
-			<div class="complex_item">
-				<h2 class="complex_item_title">Базовый</h2>
-				<h3 class="complex_item_price">
-					<i class="fas fa-ruble-sign"></i>
-					<span>10 999</span>
-					<i class="complex_item_price_month">/мес</i>
-				</h3>
-				<ul class="complex_item_list">
-					<li>Расчет и начисление зарплаты сотрудникам</li>
-					<li>Подготовка кадровых документов по сотрудникам</li>
-					<li>Подготовка зарплатных документов по сотрудникам</li>
-					<li>Подготовка отчетности по сотрудникам (ЕСВ, 1ДФ, другие)</li>
-					<li> Юридическая консультация</li>
-					<li> Подбор системы налогообложения</li>
-					<li> Оптимизация налогов</li>
-					<li> Разблокировка расчётного счёта</li>
-				</ul>
-
-				<button id="btn_modal" class="complex_item_btn">Заказать</button>
-			</div>
-		</div>
-	</section> <!-- /complex -->
-
-
 	<section class="handling">
 		<div class="title handling--title">как происходит обсуживание</div>
 		<div class="handling_inner">
@@ -370,11 +300,103 @@
 				
 			</div>
 		</div>
-
 	</section> <!-- /handling -->
 
+	<section class="complex">
+		<h2 class="title">Комплесный подход</h2>
+		<h3 class="subtitle complex--subtitle">Мы поможем вам перераспределить нагрузку c вашей компаний на нас</h3>
+
+		<div class="complex_inner">
+			<div class="complex_item">
+				<h2 class="complex_item_title">Базовый</h2>
+				<h3 class="complex_item_price">
+					<img src="img/rouble.svg">
+					<span>10 999</span>
+					<i class="complex_item_price_month">/мес</i>
+				</h3>
+				<ul class="complex_item_list">
+					<li>Расчет и начисление зарплаты сотрудникам</li>
+					<li>Подготовка кадровых документов по сотрудникам</li>
+					<li>Подготовка зарплатных документов по сотрудникам</li>
+					<li>Подготовка отчетности по сотрудникам (ЕСВ, 1ДФ, другие)</li>
+					<li> Юридическая консультация</li>
+					<li> Подбор системы налогообложения</li>
+					<li> Оптимизация налогов</li>
+					<li> Разблокировка расчётного счёта</li>
+				</ul>
+
+				<button id="btn_modal" class="complex_item_btn">Заказать</button>
+			</div>
+			<div class="complex_item">
+				<h2 class="complex_item_title">Базовый</h2>
+				<h3 class="complex_item_price">
+					<img src="img/rouble.svg">
+					<span>10 999</span>
+					<i class="complex_item_price_month">/мес</i>
+				</h3>
+				<ul class="complex_item_list">
+					<li>Расчет и начисление зарплаты сотрудникам</li>
+					<li>Подготовка кадровых документов по сотрудникам</li>
+					<li>Подготовка зарплатных документов по сотрудникам</li>
+					<li>Подготовка отчетности по сотрудникам (ЕСВ, 1ДФ, другие)</li>
+					<li> Юридическая консультация</li>
+					<li> Подбор системы налогообложения</li>
+					<li> Оптимизация налогов</li>
+					<li> Разблокировка расчётного счёта</li>
+				</ul>
+
+				<button id="btn_modal" class="complex_item_btn">Заказать</button>
+			</div>
+			<div class="complex_item">
+				<h2 class="complex_item_title">Базовый</h2>
+				<h3 class="complex_item_price">
+					<img src="img/rouble.svg">
+					<span>10 999</span>
+					<i class="complex_item_price_month">/мес</i>
+				</h3>
+				<ul class="complex_item_list">
+					<li>Расчет и начисление зарплаты сотрудникам</li>
+					<li>Подготовка кадровых документов по сотрудникам</li>
+					<li>Подготовка зарплатных документов по сотрудникам</li>
+					<li>Подготовка отчетности по сотрудникам (ЕСВ, 1ДФ, другие)</li>
+					<li> Юридическая консультация</li>
+					<li> Подбор системы налогообложения</li>
+					<li> Оптимизация налогов</li>
+					<li> Разблокировка расчётного счёта</li>
+				</ul>
+
+				<button id="btn_modal" class="complex_item_btn">Заказать</button>
+			</div>
+		</div>
+	</section> <!-- /complex -->
+
+
 	<section class="maps">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d149d9269ee11260cc696f5d13288f5660dd00230607f78e7e97751deaa1f47&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+		<div class="contact_info--maps">
+				<h2 class=" title contact_info--title">
+					Контакты
+				</h2>
+				<div class="contact_info_list contact_info_list--maps">
+					<img class="contact_info_list_icon" src="img/contact-icon-1.svg" alt="">
+					<div class="contact_info_list_text">
+						Нальчик, ул головко 196, 3 этаж, 303 каб
+					</div>
+				</div>
+
+				<div class="contact_info_list contact_info_list--maps">
+					<img class="contact_info_list_icon" src="img/contact-icon-2.svg" alt="">
+					<div class="contact_info_list_text">
+						8-939-838-93-93
+					</div>
+				</div>
+				<div class="contact_info_list contact_info_list--maps">
+					<img class="contact_info_list_icon" src="img/contact-icon-3.svg" alt="">
+					<div class="contact_info_list_text">
+						aida.aloeva.mail.ru
+					</div>
+				</div>
+			</div><!-- /contact_info -->
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4d149d9269ee11260cc696f5d13288f5660dd00230607f78e7e97751deaa1f47&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
 	</section>
 
 
@@ -427,9 +449,6 @@
 	
 
  	
-	<script src="https://kit.fontawesome.com/56d3c7edd4.js"></script>
 	<script src="js/main.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-	<script>new WOW().init();</script>
 </body>
 </html>

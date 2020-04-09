@@ -632,6 +632,10 @@ img {
   font-weight: 900;
 }
 
+.complex_item_price > img {
+  width: 12px;
+}
+
 .complex_item_price_month {
   font-family: Montserrat, sans-serif;
 }
@@ -745,6 +749,38 @@ img {
   font-weight: 400;
 }
 
+/******************maps********************/
+
+.maps {
+  filter: brightness(80%);
+  -ms-filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -moz-filter: brightness(80%);
+  -o-filter: brightness(80%);
+  position: relative;
+}
+
+.contact_info--maps {
+  display: block;
+  background-color: #4542ae !important;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 60px;
+  z-index: 10;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 27px -2px #52458a;
+  box-shadow: 0px 0px 27px -2px #52458a;
+}
+
+.contact_info_list--maps {
+  margin-bottom: 25px !important;
+}
+
 /******************contact********************/
 
 .contact {
@@ -759,7 +795,7 @@ img {
   width: 100%;
   max-width: 270px;
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 .contact_inner {
@@ -771,6 +807,10 @@ img {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+
+.contact_info {
+  display: none;
 }
 
 .contact_info--title {
@@ -1014,6 +1054,48 @@ img {
 
 .header--about {
   background-image: url('../img/about_service--fon.jpg');
+  height: auto;
+}
+
+.header_nav--about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header_link--number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header_link--call {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #C957FF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header_intro {
+  padding: 90px 0 120px;
 }
 
 .header_block {
@@ -1029,7 +1111,6 @@ img {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: calc(100vh - 48px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1103,7 +1184,7 @@ img {
 
 .info_item_line {
   display: block;
-  width: 640px;
+  max-width: 640px;
   height: 1px;
   background-color: #9999;
   margin: 0 auto;
@@ -1292,11 +1373,14 @@ img {
   background-color: #3C46A7;
   border: 0;
   border-radius: 5px;
-  color: #969BDE;
+  color: #fff;
   font-family: Montserrat, sans-serif;
   font-weight: normal;
   font-size: 14px;
   padding-left: 15px;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .modal_form_input {
@@ -1304,28 +1388,68 @@ img {
   margin-bottom: 13px;
 }
 
+.modal_form_input:focus {
+  -webkit-box-shadow: 0 0 15px -5px #A0A5D2;
+  box-shadow: 0 0 15px -5px #A0A5D2;
+}
+
+.modal_form_input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.modal_form_input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.modal_form_input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.modal_form_input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.modal_form_input:focus::placeholder {
+  opacity: 0;
+}
+
 .modal_form_input::-webkit-input-placeholder {
-  color: #969BDE;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
   opacity: 1;
 }
 
 .modal_form_input::-moz-placeholder {
-  color: #969BDE;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
   opacity: 1;
 }
 
 .modal_form_input:-ms-input-placeholder {
-  color: #969BDE;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
   opacity: 1;
 }
 
 .modal_form_input::-ms-input-placeholder {
-  color: #969BDE;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
   opacity: 1;
 }
 
 .modal_form_input::placeholder {
-  color: #969BDE;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
   opacity: 1;
 }
 
@@ -1335,6 +1459,71 @@ img {
   text-align: left;
   resize: none;
   padding-top: 8px;
+}
+
+.modal_form_textarea:focus {
+  -webkit-box-shadow: 0 0 15px -5px #A0A5D2;
+  box-shadow: 0 0 15px -5px #A0A5D2;
+}
+
+.modal_form_textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.modal_form_textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.modal_form_textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.modal_form_textarea:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.modal_form_textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.modal_form_textarea::-webkit-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.modal_form_textarea::-moz-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.modal_form_textarea:-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.modal_form_textarea::-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.modal_form_textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #cbd0ff;
+  font-size: 14px;
+  opacity: 1;
 }
 
 .modalUp {
@@ -1557,12 +1746,6 @@ img {
     align-items: center;
   }
 
-  .contact_info {
-    width: 100%;
-    max-width: 70%;
-    margin-bottom: 50px;
-  }
-
   .contact_info_list {
     margin-bottom: 20px;
   }
@@ -1605,9 +1788,24 @@ img {
     font-size: 25px;
   }
 
+  .intro_img {
+    display: none;
+  }
+
   .about_begin_image {
     max-width: 600px;
     bottom: -125px;
+  }
+
+  .contact_info--maps {
+    display: none;
+  }
+
+  .contact_info {
+    display: block;
+    width: 100%;
+    max-width: 70%;
+    margin-bottom: 50px;
   }
 }
 
@@ -1670,6 +1868,14 @@ img {
     margin-bottom: 15px;
   }
 
+  .header_link--number {
+    font-size: 14px;
+  }
+
+  .header_link--call {
+    font-size: 12px;
+  }
+
   .info_breadCramp_page {
     font-size: 13px;
   }
@@ -1701,18 +1907,9 @@ img {
     font-size: 15px;
   }
 
-  .intro_title {
-    font-size: 14px;
-  }
-
   .intro_text {
     font-size: 8px;
     margin-bottom: 20px;
-  }
-
-  .intro--btn {
-    font-size: 8px;
-    width: 120px;
   }
 
   .about_begin {
@@ -1742,6 +1939,14 @@ img {
 
   .complex_item_list {
     margin-bottom: 50px;
+  }
+
+  .header_link--number {
+    font-size: 12px;
+  }
+
+  .header_link--call {
+    font-size: 10px;
   }
 
   .info_breadCramp_page {

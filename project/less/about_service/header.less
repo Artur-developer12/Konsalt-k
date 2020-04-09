@@ -1,12 +1,57 @@
 .header{
 		&--about{
 			background-image: url('../img/about_service--fon.jpg'); 
+			height:auto;
+		}
+		&_nav{
+
+				&--about{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					text-align: center;
+				}
+		}
+		&_link{
+
+				&--number{
+					font-family: 'Montserrat', sans-serif;
+					font-size: 16px;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: #fff;
+					text-decoration: none;
+					cursor: pointer;
+						@media @mobale-sm {
+							font-size: 14px;
+						}
+						@media @mobale-ultra-sm {
+							font-size: 12px;
+						}
+				}
+				&--call{
+					font-family: 'Montserrat', sans-serif;
+					font-size: 12px;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: @violet;
+					text-decoration: none;
+					cursor: pointer;
+						@media @mobale-sm {
+							font-size: 12px;
+						}
+						@media @mobale-ultra-sm {
+							font-size: 10px;
+						}
+				}
+		}
+		&_intro{
+			padding: 90px 0 120px;
 		}
 		&_block{
 			display: flex;
 			align-items: center;
 			justify-content: center;	
-			height: calc(100vh - 48px);
 			flex-direction: column;
 
 				&_line{

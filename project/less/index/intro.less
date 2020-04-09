@@ -19,9 +19,6 @@
 				@media @mobale-sm {
 					font-size: 22px;
 				}
-				@media @mobale-ultra-sm{
-					font-size: 14px;
-				}
 				&:before{
 					position: absolute;
 					top: -5px;
@@ -52,9 +49,9 @@
 
 		}
 		&_img{
-
-				&_icon{
- 
+				
+				@media @mobale {
+					display: none;
 				}
 				&_fon{
 					position: absolute;
@@ -67,10 +64,6 @@
 				}
 		}
 		&--btn{
-			@media @mobale-ultra-sm{
-				font-size: 8px;
-				width: 120px;
-			}
 		}
 }
 

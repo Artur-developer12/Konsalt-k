@@ -105,11 +105,12 @@
 				background-color: #3C46A7;
 				border: 0;
 				border-radius: 5px;
-				color: #969BDE;
+				color: #fff;
 				font-family: Montserrat, sans-serif;
 				font-weight: normal;
 				font-size: 14px;
 				padding-left: 15px; 
+				transition: 0.7s;
 					@media @mobale-ultra-sm {
 						font-size: 12px;
 					}
@@ -118,9 +119,20 @@
 			&_input{
 				height: 30px;
 				margin-bottom: 13px;
+					&:focus{
+						box-shadow: 0 0 15px -5px #A0A5D2;
+							&::placeholder{
+								opacity: 0;
+							}		
+						}
 					&::placeholder{
-						color: #969BDE ;
-						opacity: 1;
+							font-family: 'Montserrat', sans-serif;
+							font-weight: 400;
+							color: #cbd0ff;
+							font-size: 14px;
+							opacity: 1;
+
+
 					}
 			}
 			&_textarea{
@@ -129,6 +141,21 @@
 				text-align: left;
 				resize: none;
 				padding-top: 8px;
+					&:focus{
+						box-shadow: 0 0 15px -5px #A0A5D2;
+							&::placeholder{
+								opacity: 0;
+							}		
+						}
+					&::placeholder{
+							font-family: 'Montserrat', sans-serif;
+							font-weight: 400;
+							color: #cbd0ff;
+							font-size: 14px;
+							opacity: 1;
+
+
+					}
 					@media @mobale-ultra-sm {
 						margin-bottom: 20px;
 						height: 85px;
