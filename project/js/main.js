@@ -1,14 +1,23 @@
-let btn = document.querySelectorAll('#btn_modal');
-let modal = document.querySelector('#modal');
+let btn        = document.querySelectorAll('#btn_modal');
+let modal      = document.querySelector('#modal');
 let modalInner = modal.firstElementChild;
 let modalClose = modalInner.firstElementChild;
-let body = modal.parentElement;
-let header = document.querySelector('.header').scrollHeight;
-let nav_inner = document.querySelector('#nav_inner');
-let links = document.querySelectorAll('.header_link');
-let burger = document.querySelector('#burger');
+let body       = modal.parentElement;
+let header     = document.querySelector('.header').scrollHeight;
+let nav_inner  = document.querySelector('#nav_inner');
+let links      = document.querySelectorAll('.header_link');
+let burger     = document.querySelector('#burger');
 let header_nav = document.querySelector('.header_nav')
 
+
+document.body.onload = function(){
+	setTimeout(function(){
+		let preloader = document.querySelector('#preloader');
+		if (!preloader.classList.contains('done')) {
+			preloader.classList.add('done');
+		}
+	},1000)
+}
 // бургер меню
  if (burger != undefined) {
  	burger.onclick = function(){

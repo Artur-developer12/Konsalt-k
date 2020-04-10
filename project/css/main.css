@@ -117,11 +117,7 @@ img {
 
 /*********************************************/
 
-/*********************************************/
-
 /***************index.html********************/
-
-/*********************************************/
 
 /*********************************************/
 
@@ -199,7 +195,7 @@ img {
 .fixed {
   position: fixed;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   background-color: #435480;
   -webkit-animation: nav_fixed 0.5s;
@@ -634,6 +630,7 @@ img {
 
 .complex_item_price > img {
   width: 12px;
+  color: #fff;
 }
 
 .complex_item_price_month {
@@ -752,12 +749,15 @@ img {
 /******************maps********************/
 
 .maps {
+  position: relative;
+}
+
+.maps_item {
   filter: brightness(80%);
   -ms-filter: brightness(80%);
   -webkit-filter: brightness(80%);
   -moz-filter: brightness(80%);
   -o-filter: brightness(80%);
-  position: relative;
 }
 
 .contact_info--maps {
@@ -770,7 +770,7 @@ img {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 60px;
-  z-index: 10;
+  z-index: 2;
   padding: 20px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 27px -2px #52458a;
@@ -1237,7 +1237,7 @@ img {
 
 /**************************************************/
 
-/*********************Modal************************/
+/*********************Module************************/
 
 .modal {
   display: none;
@@ -1691,6 +1691,66 @@ img {
   -webkit-transform: translateY(-50%) rotate(-45deg);
   -ms-transform: translateY(-50%) rotate(-45deg);
   transform: translateY(-50%) rotate(-45deg);
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f6fd;
+  z-index: 1001;
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader {
+  width: 55px;
+  height: 55px;
+  border: 8px solid #b2cefa;
+  border-radius: 50%;
+  border-top-color: #0047eb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 @media (max-width: 991px) {
