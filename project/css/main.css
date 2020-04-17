@@ -276,14 +276,6 @@ img {
   margin-bottom: 40px;
 }
 
-.intro_img_fon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: auto;
-}
-
 @-webkit-keyframes cirkle_title {
   from {
     -webkit-transform: rotateY(0);
