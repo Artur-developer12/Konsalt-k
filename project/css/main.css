@@ -754,7 +754,7 @@ img {
 
 .contact_info--maps {
   display: block;
-  background-color: #4542ae !important;
+  background-color: #42307E !important;
   width: 300px;
   position: absolute;
   top: 50%;
@@ -852,6 +852,10 @@ img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact_form > input {
@@ -1717,8 +1721,8 @@ img {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
 }
 
 @-webkit-keyframes spin {
