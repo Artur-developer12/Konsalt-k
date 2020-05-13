@@ -109,6 +109,8 @@ function openModal(){
  openModal();
  closeModal();
 
+
+ console.log(window.innerWidth);
  // паралакс
 document.querySelector('.intro').addEventListener('mousemove', function(e){
 	let x = e.pageX / this.offsetWidth;

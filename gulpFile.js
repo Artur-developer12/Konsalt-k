@@ -40,7 +40,8 @@ var gulp = require('gulp'),
  		brouserSinc({
  			// proxy:"konsalt-k/project",
  			server: {
- 				baseDir:'project'
+				 baseDir:'project',
+				//  index: "404.html",
  			}
  		})
  	});

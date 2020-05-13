@@ -1,0 +1,36 @@
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(270deg, #6700B8 0%, #000B46 100%);
+        &_item{
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 50px;
+                &_img{
+                    margin-bottom: 40px;
+                }
+                &_text{
+                    font-family: Montserrat;
+                    font-weight: 600;
+                    font-size: 19px;
+                    color: #fff;
+                    text-align: center;
+                    margin-bottom: 35px;
+                        @media @mobale-ultra-sm{
+                            font-size: 16px;
+                        }
+                }
+                &_btn{
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    width: 180px;
+                    text-align: center;
+                }
+        }
+}
